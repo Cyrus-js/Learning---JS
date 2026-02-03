@@ -39,16 +39,19 @@ citiesVisited.push("berlin");
 */
 let teaOrders = ["chai", "iced tea", "matcha", "earl grey"];
 const lastOrder = teaOrders.pop();
-console.log(lastOrder);
-console.log(teaOrders);
+// console.log(teaOrders);
+// console.log(lastOrder);
 
 /* 
 6. You have an array named `popularTeas` containing `"green tea"`, `"oolong tea"`, and `"chai"`. 
    Create a soft copy of this array named `softCopyTeas`.
 */
 
-// console.log(softCopyTeas);
-// console.log(popularTeas);
+popularTeas = ["green tea", "oolang tea", "chai"];
+let softCopyTeas = popularTeas;
+popularTeas.pop();
+console.log(popularTeas);
+console.log(softCopyTeas);
 
 /* 
 7. You have an array named `topCities` containing `"Berlin"`, `"Singapore"`, and `"New York"`. 
