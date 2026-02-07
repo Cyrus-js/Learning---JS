@@ -16,4 +16,27 @@ while (i <= 5) {
   i++; // Move to next number
 }
 
-console.log("Max sum 1+2+3+4+5 =", sum); // Output: 15
+// console.log("Max sum 1+2+3+4+5 =", sum); // Output: 15
+
+// const output = [];
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 15 === 0) {
+//     output.push("FizzBuzz");
+//   } else if (i % 3 === 0) {
+//     output.push("Fizz");
+//   } else if (i % 5 === 0) {
+//     output.push("Buzz");
+//   } else {
+//     output.push(i.toString());
+//   }
+// }
+// console.log(output.join(", "));
+
+let n = 5;
+let row = 1;
+while (row <= n) {
+  let spaces = " ".repeat(n - row);
+  let stars = "*".repeat(2 * row - 1);
+  console.log(spaces + stars);
+  row++;
+}
