@@ -40,3 +40,12 @@ while (row <= n) {
   console.log(spaces + stars);
   row++;
 }
+
+let num = 0;
+let a = 0;
+
+while (a <= 5) {
+  num += a;
+  a++;
+}
+console.log(num);
