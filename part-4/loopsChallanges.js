@@ -49,3 +49,9 @@ while (a <= 5) {
   a++;
 }
 console.log(num);
+
+let sum1 = 0;
+for (let i = 1; i <= 10; i++) {
+  sum1 += i;
+}
+console.log(sum1);
