@@ -18,19 +18,19 @@ while (i <= 5) {
 
 // console.log("Max sum 1+2+3+4+5 =", sum); // Output: 15
 
-// const output = [];
-// for (let i = 1; i <= 100; i++) {
-//   if (i % 15 === 0) {
-//     output.push("FizzBuzz");
-//   } else if (i % 3 === 0) {
-//     output.push("Fizz");
-//   } else if (i % 5 === 0) {
-//     output.push("Buzz");
-//   } else {
-//     output.push(i.toString());
-//   }
-// }
-// console.log(output.join(", "));
+const output = [];
+for (let i = 1; i <= 100; i++) {
+  if (i % 15 === 0) {
+    output.push("FizzBuzz");
+  } else if (i % 3 === 0) {
+    output.push("Fizz");
+  } else if (i % 5 === 0) {
+    output.push("Buzz");
+  } else {
+    output.push(i.toString());
+  }
+}
+console.log(output.join(", "));
 
 let n = 5;
 let row = 1;
@@ -50,7 +50,7 @@ while (a <= 5) {
 }
 console.log(num);
 
-let sum1 = 0;
+let sum1 = 6;
 for (let i = 1; i <= 10; i++) {
   sum1 += i;
 }
