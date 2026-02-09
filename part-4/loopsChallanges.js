@@ -55,3 +55,32 @@ for (let i = 1; i <= 10; i++) {
   sum1 += i;
 }
 console.log(sum1);
+
+const EventEmitter = require("events");
+class DataBus extends EventEmitter {}
+
+const bus = new DataBus();
+
+// Data producers emit events
+function processUserData(users) {
+  users.forEach((user) => {
+    bus.emit("user:processed", { id: user.id, name: user.name });
+  });
+}
+
+// Listeners handle efficiently
+bus.on("user:processed", (data) => {
+  console.log(`✅ Processed: ${data.name}`);
+});
+
+bus.on("user:processed", (data) => {
+  // Parallel: Save to DB simulation
+  setTimeout(() => console.log(`💾 Saved: ${data.id}`), 0);
+});
+
+// Test with loop-generated data
+const users = [];
+for (let i = 1; i <= 5; i++) {
+  users.push({ id: i, name: `User${i}` });
+}
+processUserData(users);
