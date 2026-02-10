@@ -18,20 +18,6 @@ while (i <= 5) {
 
 // console.log("Max sum 1+2+3+4+5 =", sum); // Output: 15
 
-const output = [];
-for (let i = 1; i <= 100; i++) {
-  if (i % 15 === 0) {
-    output.push("FizzBuzz");
-  } else if (i % 3 === 0) {
-    output.push("Fizz");
-  } else if (i % 5 === 0) {
-    output.push("Buzz");
-  } else {
-    output.push(i.toString());
-  }
-}
-console.log(output.join(", "));
-
 let n = 5;
 let row = 1;
 while (row <= n) {
@@ -56,31 +42,11 @@ for (let i = 1; i <= 10; i++) {
 }
 console.log(sum1);
 
-const EventEmitter = require("events");
-class DataBus extends EventEmitter {}
+let init = 0;
+let strt = 1;
 
-const bus = new DataBus();
-
-// Data producers emit events
-function processUserData(users) {
-  users.forEach((user) => {
-    bus.emit("user:processed", { id: user.id, name: user.name });
-  });
+while (strt <= 6) {
+  init += 1;
+  strt++;
 }
-
-// Listeners handle efficiently
-bus.on("user:processed", (data) => {
-  console.log(`✅ Processed: ${data.name}`);
-});
-
-bus.on("user:processed", (data) => {
-  // Parallel: Save to DB simulation
-  setTimeout(() => console.log(`💾 Saved: ${data.id}`), 0);
-});
-
-// Test with loop-generated data
-const users = [];
-for (let i = 1; i <= 5; i++) {
-  users.push({ id: i, name: `User${i}` });
-}
-processUserData(users);
+console.log(strt);
