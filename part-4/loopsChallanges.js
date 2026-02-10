@@ -45,7 +45,7 @@ console.log(sum1);
 let init = 0;
 let strt = 1;
 
-while (strt <= 6) {
+while (strt >= 6) {
   init += 1;
   strt++;
 }
