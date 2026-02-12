@@ -27,3 +27,11 @@ while (j > 0) {
   j--;
 }
 console.log(countdown);
+
+
+let teaCollection = []
+let tea
+do{
+  prompt(`Enter your favourite tea(type "stop" to finish)`)
+  while (condition)
+}
