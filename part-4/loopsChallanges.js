@@ -20,18 +20,37 @@
 
 //
 
-let countdown = [];
-let j = 5;
-while (j > 0) {
-  countdown.push(j);
-  j--;
-}
-console.log(countdown);
+// let countdown = [];
+// let j = 5;
+// while (j > 0) {
+//   countdown.push(j);
+//   j--;
+// }
+// console.log(countdown);
 
+// Tea Collection Part (Node.js version)
+const readline = require("readline");
 
-let teaCollection = []
-let tea
-do{
-  prompt(`Enter your favourite tea(type "stop" to finish)`)
-  while (condition)
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+let teaCollection = [];
+
+function askTea() {
+  rl.question(
+    'Enter your favourite tea (type "stop" to finish): ',
+    function (tea) {
+      if (tea.toLowerCase() === "stop") {
+        console.log("Tea Collection:", teaCollection);
+        rl.close();
+      } else {
+        teaCollection.push(tea);
+        askTea(); // ask again
+      }
+    },
+  );
 }
+
+askTea();
