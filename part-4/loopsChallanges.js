@@ -28,3 +28,11 @@ do {
     teaCollection.push(tea);
   }
 } while (tea !== "stop");
+
+let total = 0;
+let k = 1;
+do {
+  total += k;
+  k++;
+} while (k <= 3);
+console.log("k");
