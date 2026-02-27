@@ -18,21 +18,25 @@
 //   console.log(`cyrus` + i);
 // }
 
-let teaCollection = [];
-let tea;
+// let teaCollection = [];
+// let tea;
 
-do {
-  tea = prompt(`Enter your favourite tea(type "stop" to finish)`);
+// do {
+//   tea = prompt(`Enter your favourite tea(type "stop" to finish)`);
 
-  if (tea !== "stop") {
-    teaCollection.push(tea);
-  }
-} while (tea !== "stop");
+//   if (tea !== "stop") {
+//     teaCollection.push(tea);
+//   }
+// } while (tea !== "stop");
 
-let total = 0;
-let k = 1;
-do {
-  total += k;
-  k++;
-} while (k <= 3);
-console.log("k");
+// let total = 0;
+// let k = 1;
+// do {
+//   total += k;
+//   k++;
+// } while (k <= 3);
+// console.log("k");
+
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}
