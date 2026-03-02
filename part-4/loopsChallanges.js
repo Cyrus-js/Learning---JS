@@ -46,3 +46,12 @@ while (i <= 5) {
   console.log(i);
   i++;
 }
+
+let person = {
+  name: "Ram",
+  age: 20,
+};
+
+for (let key in person) {
+  console.log(key, person[key]);
+}
