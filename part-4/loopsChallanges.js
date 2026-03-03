@@ -55,3 +55,8 @@ let person = {
 for (let key in person) {
   console.log(key, person[key]);
 }
+
+for (let i = 1; i <= 5; i++) {
+  if (i === 3) break;
+  console.log(i);
+}
