@@ -37,26 +37,31 @@
 // } while (k <= 3);
 // console.log("k");
 
-for (let i = 1; i <= 5; i++) {
-  console.log(i);
-}
+// for (let i = 1; i <= 5; i++) {
+//   console.log(i);
+// }
 
-let i = 1;
-while (i <= 5) {
-  console.log(i);
-  i++;
-}
+// let i = 1;
+// while (i <= 5) {
+//   console.log(i);
+//   i++;
+// }
 
-let person = {
-  name: "Ram",
-  age: 20,
-};
+// let person = {
+//   name: "Ram",
+//   age: 20,
+// };
 
-for (let key in person) {
-  console.log(key, person[key]);
-}
+// for (let key in person) {
+//   console.log(key, person[key]);
+// }
 
-for (let i = 1; i <= 5; i++) {
-  if (i === 3) break;
-  console.log(i);
+// for (let i = 1; i <= 5; i++) {
+//   if (i === 3) break;
+//   console.log(i);
+// }
+let u = 1;
+{
+  if (((u = 3), u++));
 }
+console.log(u);
