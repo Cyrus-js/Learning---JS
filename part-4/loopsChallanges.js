@@ -65,3 +65,10 @@ let u = 1;
   if (((u = 3), u++));
 }
 console.log(u);
+
+let i = 1;
+
+do {
+  console.log(i);
+  i++;
+} while (i <= 5);
