@@ -24,3 +24,14 @@
 for (let i = 1; i <= 10; i++) {
   console.log("Hello");
 }
+
+let teaCollection = [];
+let tea;
+
+do {
+  tea = prompt(`Enter your favourite tea(type "stop" to finish)`);
+
+  if (tea !== "stop") {
+    teaCollection.push(tea);
+  }
+} while (tea !== "stop");
