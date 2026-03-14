@@ -1,35 +1,35 @@
-// Numbers
+//Numbers
 let balance = 120;
 let anotherBalance = new Number(100);
 
-// console.log(balance);
-// console.log(anotherBalance.valueOf());
+console.log(balance);
+console.log(anotherBalance.valueOf());
 
-// console.log(typeof balance);
-// console.log(typeof anotherBalance);
+console.log(typeof balance);
+console.log(typeof anotherBalance);
 
 //boolean
 let isActive = true;
 let isreallyactive = new Boolean(true);
-// console.log(typeof isreallyactive);
+console.log(typeof isreallyactive);
 
 //Null and undefined
 let firstName = null;
-// console.log(firstName);
+console.log(firstName);
 
 //String
-let myString = "Pukuleee";
+let myString = "Hitesh";
 let myString1 = "pretty";
-let userName = "Love";
+let userName = "Friend";
 
-let oldgreet = myString + `` + `Beautiful`;
-// console.log(oldgreet);
+let oldgreet = myString + `` + `Sir`;
+console.log(oldgreet);
 
 let greetMessage = `Helloo my ${userName} ${myString}!`;
-// console.log(greetMessage);
+console.log(greetMessage);
 
 let multiplication = `The value of 5*5 is ${5 * 5}`;
-// console.log(multiplication);
+console.log(multiplication);
 
 //Symbol
 
