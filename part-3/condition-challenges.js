@@ -152,6 +152,14 @@ let teaMenu = ["masala chai", "green tea", "black tea"];
 const menuLength = teaMenu.length;
 // console.log(menuLength);
 
-let cityBusiness = ["New York", "London", "Tokyo"];
-let isLondoninlist = cityBusiness.includes("London");
-console.log(isLondoninlist);
+let cityBuckedlist = ["Kyoto", "London", "Cape Town", "Vancouver"];
+let iscapeinlist = cityBuckedlist.includes("Cape Town");
+// console.log(iscapeinlist);
+
+let genius = ["leo", "nardo", "de", "divinchi"];
+let thegreat = genius.join("");
+// console.log(thegreat);
+
+let NUM = ["1", "2", "3"];
+console.log(NUM.unshift("0"));
+console.log(NUM);
