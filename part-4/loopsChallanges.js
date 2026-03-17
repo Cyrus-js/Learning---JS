@@ -181,3 +181,61 @@ for (let l = 0; l < array.length; l++) {
   multipliedNumbers.push(multiply);
 }
 // console.log(multipliedNumbers);
+let cityList = [];
+let cities = ["paris", "new york", "tokyo", "london"];
+for (let c = 0; c < cities.length; c++) {
+  let firstcity = cities[c];
+  cityList.push(firstcity);
+}
+// console.log(cityList);
+
+//practicing
+
+let addition = 0;
+let stat = 1;
+while (stat <= 5) {
+  addition += stat;
+  stat++;
+}
+// console.log(addition);
+
+let countdowns = [];
+let n = 5;
+while (n >= 1) {
+  countdowns.push(n);
+  n--;
+}
+// console.log(countdowns);
+
+// let teaCollections = [];
+// let teas;
+
+// do {
+//   teas = prompt(`Enter your tea order."Type -STOP- to end your order"`);
+//   if (teas !== "stop") {
+//     teaCollections.push(teas);
+//   }
+// } while (teas !== "stop");
+
+let jod = 0;
+let l = 1;
+do {
+  jod += l;
+  l++;
+} while (l <= 3);
+// console.log(jod);
+
+let given = [2, 4, 6];
+let newarray = [];
+
+for (let a = 0; a < given.length; a++) {
+  newarray.push(given[a] * 2);
+  // console.log(newarray);
+}
+
+let sahar = ["Paris", "New York", "Tokyo", "London"];
+let saharname = [];
+for (let s = 0; s < sahar.length; s++) {
+  saharname.push(sahar[s]);
+}
+console.log(saharname);
