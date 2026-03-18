@@ -39,3 +39,73 @@ for (const chiya of tea) {
   prefferedTea.push(chiya);
 }
 // console.log(prefferedTea);
+
+let citiesPopulation = {
+  London: 8900000,
+  Newyork: 8400000,
+  Berlin: 3500000,
+  Paris: 2200000,
+};
+let newcityPopulation = {};
+for (const city in citiesPopulation) {
+  if (city === "Paris") {
+    break;
+  }
+  newcityPopulation[city] = citiesPopulation[city];
+}
+// console.log(newcityPopulation);
+
+let worldCities = {
+  Sydney: 5000000,
+  Tokyo: 9000000,
+  Berlin: 3500000,
+  Paris: 2200000,
+};
+let largeCities = {};
+for (const top in worldCities) {
+  if (worldCities[top] < 3000000) {
+    continue;
+  }
+  largeCities[top] = worldCities[top];
+}
+// console.log(largeCities);
+
+let teaarray = ["earl grey", "green tea", "chai", "oolong tea"];
+let avaialableTeas = [];
+teaarray.forEach(function (chiya) {
+  if (chiya === "chai") {
+    return;
+  }
+  avaialableTeas.push(chiya);
+});
+// console.log(avaialableTeas);
+
+let cityarray = ["berlin", "tokyo", "sydney", "paris"];
+let traveledCities = [];
+cityarray.forEach(function (city) {
+  if (city === "sydney") {
+    return;
+  }
+  traveledCities.push(city);
+});
+// console.log(traveledCities);
+
+let num = [2, 5, 7, 9];
+let doubledNumbers = [];
+for (let neww = 0; neww < num.length; neww++) {
+  if (num[neww] === 7) {
+    continue;
+  }
+  doubledNumbers.push(num[neww] * 2);
+}
+// console.log(doubledNumbers);
+
+let giventea = ["chai", "green tea", "black tea", "jasmine tea", "herbal tea"];
+let shortTeas = [];
+for (const chai of giventea) {
+  if (chai.length > 10) {
+    break;
+  }
+  shortTeas.push(chai);
+}
+console.log(shortTeas);
