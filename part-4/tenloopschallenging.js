@@ -102,10 +102,10 @@ for (let neww = 0; neww < num.length; neww++) {
 
 let giventea = ["chai", "green tea", "black tea", "jasmine tea", "herbal tea"];
 let shortTeas = [];
-for (const chai of giventea) {
-  if (chai.length > 10) {
+for (const tea of giventea) {
+  if (tea.length > 10) {
     break;
   }
-  shortTeas.push(chai);
+  shortTeas.push(tea);
 }
-console.log(shortTeas);
+// console.log(shortTeas);s
