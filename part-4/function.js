@@ -20,11 +20,38 @@ const calculateTotal = (price, quantity) => {
 let totalCost = calculateTotal(200, 300);
 // console.log(totalCost);
 
-function processTeaOrder(teafunction) {
-  return teafunction("earl grey");
+function processTeaOrder(fn) {
+  return fn(`earl grey`);
 }
-function makeTea(typesOfTea) {
-  return `maketea:${typesOfTea}`;
+function makeTea(giveme) {
+  return `make tea:${giveme}`;
 }
-let finalorders = processTeaOrder(makeTea);
-console.log(finalorders);
+
+let orders = processTeaOrder(makeTea);
+// console.log(orders);
+
+function getjuice(ready) {
+  return ready(`orange`);
+}
+function makejuice(making) {
+  return `ready:${making} juice`;
+}
+finals = getjuice(makejuice);
+// console.log(finals);
+function playSong(fn) {
+  return fn(`Twinkle Twinkle`);
+}
+function singIt(singing) {
+  return `sing:${singing}`;
+}
+
+let song = playSong(singIt);
+// console.log(song);
+
+function createTeaMaker(name) {
+  return function (teaType) {
+    return `making ${teaType} tea for mr.${name}`;
+  };
+}
+let teaMaker = createTeaMaker("hitesh");
+console.log(teaMaker("green"));
