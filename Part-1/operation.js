@@ -22,7 +22,7 @@
 // console.log(exponent);
 
 let myscore = 40;
-myscore--;
+myscore++;
 console.log(myscore);
 
 let num1 = 3;
