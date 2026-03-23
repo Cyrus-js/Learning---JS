@@ -28,7 +28,7 @@ function makeTea(giveme) {
 }
 
 let orders = processTeaOrder(makeTea);
-// console.log(orders);
+console.log(orders);
 
 function getjuice(ready) {
   return ready(`orange`);
@@ -54,4 +54,4 @@ function createTeaMaker(name) {
   };
 }
 let teaMaker = createTeaMaker("hitesh");
-console.log(teaMaker("green"));
+// console.log(teaMaker("green"));
