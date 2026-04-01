@@ -3,6 +3,11 @@
 
 // Task 1: Array Filtering
 // Write a function filterNumbers(arr) that returns only numbers from a mixed array
+function filterNumbers(arr) {
+  return arr.filter((item) => typeof item === "number");
+}
+const mixedarray = [1, 2, "ca", 3, 4, "f"];
+console.log(filterNumbers(mixedarray));
 
 // Task 2: Array Reversal
 // Write a function reverseArray(arr) that reverses the array
