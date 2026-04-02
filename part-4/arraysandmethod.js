@@ -7,13 +7,22 @@ function filterNumbers(arr) {
   return arr.filter((item) => typeof item === "number");
 }
 const mixedarray = [1, 2, "ca", 3, 4, "f"];
-console.log(filterNumbers(mixedarray));
+// console.log(filterNumbers(mixedarray));
 
 // Task 2: Array Reversal
 // Write a function reverseArray(arr) that reverses the array
+function reverseArray(arr) {
+  return arr.reverse();
+}
+// const num = [1, 2, 3, 4, 5];
+console.log(reverseArray([1, 2, 3, 4, 5]));
 
 // Task 3: Find Maximum in an Array
 // Write a function findMax(arr) that returns the largest number in the array
+function findMax(arr) {
+  return Math.max(...arr);
+}
+console.log(findMax([1, 2, 3, 4]));
 
 // Task 4: Remove Duplicates from an Array
 // Write a function removeDuplicates(arr) that returns a new array with all duplicates removed
